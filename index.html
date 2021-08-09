@@ -1,0 +1,34 @@
+<html>
+
+<head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <script src="index.js"></script>
+   <title>NextStep Forum</title>
+   <meta charset="UTF-8">
+</head>
+
+<body>
+   <div id="before_login">
+       <div id="login_form">
+           Username: <input id="login_username" /><br />
+           Password: <input type="password" id="login_password" /><br />
+           <a href="#" onClick="javascript:do_login();">Login</a>
+       </div>
+       <hr />
+       <div id="registration_form">
+           Username: <input id="reg_username" /><br />
+           Password: <input type="password" id="reg_password1" /><br />
+           Password again: <input type="password" id="reg_password2" /> <span id="check_result"></span><br />
+           First name: <input id="reg_first_name" /><br />
+           Last name: <input id="reg_last_name" /><br />
+           <a href="#" onClick="javascript:register();">Register</a>
+       </div>
+   </div>
+   <div id="after_login">
+       <div id="topics">Here be topics</div>
+       New topic: <input id="new_topic" /><br />
+       <a href="#" onClick="javascript:create_topic();">Create topic</a><br />
+   </div>
+</body>
+
+</html>
